@@ -8,7 +8,7 @@
 
 # ArrayBuilder
 
-A result builder that allows to build arrays with conditions and loops with SwiftUI like syntax.
+A result builder that allows to build arrays declaratively with conditions and loops with SwiftUI like syntax.
 
 Inspired by https://gist.github.com/rjchatfield/72629b22fa915f72bfddd96a96c541eb
 
