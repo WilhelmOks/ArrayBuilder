@@ -72,9 +72,28 @@ Using in a function that returns an array:
     }
 ```
 ```
-let array = textItems()
+    let array = textItems()
 ```
 
+Using in a function that takes an array as a parameter:
+```
+    func numberOfItems(@ArrayBuilder<String> _ array: () -> [String]) -> Int {
+        return array().count
+    }
+```
+```
+    let count = numberOfItems {
+        "Lorem"
+        if false {
+            "Amen"
+        }
+        if true {
+            "Ipsum"
+        }
+        "Dolor"
+    }
+    // count == 3
+```
 
 ## Swift Package Manager
 
