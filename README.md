@@ -10,6 +10,37 @@
 
 A result builder that allows to build arrays with conditions and loops with SwiftUI like syntax.
 
+Inspired by https://gist.github.com/rjchatfield/72629b22fa915f72bfddd96a96c541eb
+
+## Description
+
+The usual way to create arrays with conditions:
+```
+    var textItems: [String] = []
+    textItems.append("Lorem")
+    if false {
+        textItems.append("Amen")
+    }
+    if true {
+        textItems.append("Ipsum")
+    }
+    textItems.append("Dolor")
+```
+
+Creating arrays with conditions using `ArrayBuilder`:
+```
+    let textItems: [String] = .init {
+        "Lorem"
+        if false {
+            "Amen"
+        }
+        if true {
+            "Ipsum"
+        }
+        "Dolor"
+    }
+```
+
 ## Swift Package Manager
 
 This library is a Swift Module and can be added using this URL:
