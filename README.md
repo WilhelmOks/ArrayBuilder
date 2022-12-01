@@ -12,7 +12,7 @@ A result builder that allows to build arrays with conditions and loops with Swif
 
 Inspired by https://gist.github.com/rjchatfield/72629b22fa915f72bfddd96a96c541eb
 
-## Description
+## Usage
 
 The usual way to create arrays with conditions:
 ```
@@ -40,6 +40,41 @@ Creating arrays with conditions using `ArrayBuilder`:
         "Dolor"
     }
 ```
+
+Also supports switch case and for loops:
+```
+    let textItems: [String] = .init {
+        "Lorem"
+        
+        switch number {
+        case 5:
+            "Ipsum"
+        default:
+            Void()
+        }
+        
+        for number in 0...2 {
+            "\(number)"
+        }
+        
+        "Dolor"
+    }
+```
+
+Using in a function that returns an array:
+```
+    @ArrayBuilder<String> func textItems() -> [String] {        
+        "Lorem"
+        if true {
+            "Ipsum"
+        }
+        "Dolor"
+    }
+```
+```
+let array = textItems()
+```
+
 
 ## Swift Package Manager
 
