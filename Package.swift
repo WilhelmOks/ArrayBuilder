@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "ArrayBuilderModule",
+    name: "ArrayBuilder",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "ArrayBuilder",
+            name: "ArrayBuilderModule",
             targets: ["ArrayBuilder"]),
     ],
     dependencies: [
