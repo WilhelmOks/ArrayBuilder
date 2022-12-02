@@ -102,4 +102,7 @@ This library is a Swift Module and can be added using this URL:
 https://github.com/WilhelmOks/ArrayBuilder.git
 ```
 
-`import ArrayBuilder` to use it in your code.
+`import ArrayBuilderModule` to use `ArrayBuilder` it in your code.
+
+To use `ArrayBuilder` in the whole project without import in each file, you can create a typealias:
+`typealias ArrayBuilder = ArrayBuilderModule.ArrayBuilder`
