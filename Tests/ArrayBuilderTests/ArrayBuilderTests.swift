@@ -1,5 +1,5 @@
 import XCTest
-@testable import ArrayBuilder
+@testable import ArrayBuilderModule
 
 final class ArrayBuilderTests: XCTestCase {
     func testIf() throws {

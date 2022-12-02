@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ArrayBuilder
+@testable import ArrayBuilderModule
 
 final class UseInFunctionsTests: XCTestCase {
     @ArrayBuilder<String> func returningArray() -> [String] {
