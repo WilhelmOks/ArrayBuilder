@@ -97,7 +97,7 @@ Using in a function that takes an array as a parameter:
 
 ## Swift Package Manager
 
-This library is a Swift Module and can be added using this URL:
+This library is a Swift Package and can be added using this URL:
 ```
 https://github.com/WilhelmOks/ArrayBuilder.git
 ```
