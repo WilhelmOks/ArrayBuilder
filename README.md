@@ -1,9 +1,9 @@
 <p>
-    <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
+    <img src="https://img.shields.io/badge/Swift-5.7-orange.svg" />
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
-    <img src="https://img.shields.io/badge/platforms-macOS iOS tvOS watchOS-brightgreen.svg?style=flat" alt="Platforms: macOS iOS tvOS watchOS" />
+    <img src="https://img.shields.io/badge/platforms-macOS | iOS | tvOS | watchOS | Linux-brightgreen.svg?style=flat" alt="Platforms: macOS, iOS, tvOS, watchOS, Linux" />
 </p>
 
 # ArrayBuilder
