@@ -101,7 +101,7 @@ This library is a Swift Package and can be added using this URL:
 https://github.com/WilhelmOks/ArrayBuilder.git
 ```
 
-Import the module to use `ArrayBuilder` it in your code:
+Import the module to use `ArrayBuilder` in your code:
 ```
 import ArrayBuilderModule
 ``` 
