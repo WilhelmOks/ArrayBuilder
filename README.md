@@ -14,7 +14,7 @@ Inspired by https://gist.github.com/rjchatfield/72629b22fa915f72bfddd96a96c541eb
 ## Usage
 
 The usual way to create arrays with conditions:
-```
+```swift
     var textItems: [String] = []
     textItems.append("Lorem")
     if false {
@@ -27,7 +27,7 @@ The usual way to create arrays with conditions:
 ```
 
 Creating arrays with conditions using `ArrayBuilder`:
-```
+```swift
     let textItems: [String] = .init {
         "Lorem"
         if false {
@@ -41,7 +41,7 @@ Creating arrays with conditions using `ArrayBuilder`:
 ```
 
 Also supports switch case and for loops:
-```
+```swift
     let textItems: [String] = .init {
         "Lorem"
         
@@ -61,7 +61,7 @@ Also supports switch case and for loops:
 ```
 
 Using in a function that returns an array:
-```
+```swift
     @ArrayBuilder<String> func textItems() -> [String] {        
         "Lorem"
         if true {
@@ -70,17 +70,17 @@ Using in a function that returns an array:
         "Dolor"
     }
 ```
-```
+```swift
     let array = textItems()
 ```
 
 Using in a function that takes an array as a parameter:
-```
+```swift
     func numberOfItems(@ArrayBuilder<String> _ array: () -> [String]) -> Int {
         return array().count
     }
 ```
-```
+```swift
     let count = numberOfItems {
         "Lorem"
         if false {
@@ -102,11 +102,11 @@ https://github.com/WilhelmOks/ArrayBuilder.git
 ```
 
 Import the module to use `ArrayBuilder` in your code:
-```
+```swift
 import ArrayBuilderModule
 ``` 
 
 To use `ArrayBuilder` in the whole project without import in each file, you can create a typealias:
-```
+```swift
 typealias ArrayBuilder = ArrayBuilderModule.ArrayBuilder
 ```
